@@ -21,7 +21,7 @@ except:
     long_description = 'Route inheritance for Flask Blueprints'
 
 requirements = [
-    "flask>=0.11.1, <1.0",
+    "flask>=0.11.1, <=1.0.2",
     "six>=1.10.0, <2.0"
 ]
 

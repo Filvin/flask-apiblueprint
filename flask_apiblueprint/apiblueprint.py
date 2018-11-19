@@ -95,7 +95,7 @@ class APIBlueprint(Blueprint):
                 endpoint='static'
             )
 
-        for rule, deferred in six.iteritems(self.deferred_functions):
+        for deferred in six.itervalues(self.deferred_functions):
             deferred(state)
 
     def copy_routes(self, remapping=None):
